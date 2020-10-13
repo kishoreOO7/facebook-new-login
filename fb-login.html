@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./css/fb-login.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="login">
+            <img src="./img/facebook-b.png" width="20%">
+            <h1>login</h1>
+
+            <input type="text" placeholder="Email or Phone">
+            <input type="password" placeholder="Password" class="pass">
+            <a href="#"><i class="far fa-eye" id="eye"></i></a>
+
+            <p>Forgot Password?</p>
+            <a href="#" class="btn">Login</a>
+
+            <h4>Create a New Account</h4>
+            <p>Connect with friends and the world</p>
+
+            <h4>Create a Facebook Page</h4>
+            <p>To Publish your knowledge</p>
+        </div>
+
+        <div class="image">
+            <h2>Connect with friends <br>and the world around you <br>on Facebook</h2>
+            <img src="./img/fb-groups.jpg" width="20%">
+        </div>
+    </div>
+    
+    <script>
+
+        const pass = document.querySelector('.pass');
+        const show = document.querySelector('#eye');
+
+        show.addEventListener('click', showHide);
+
+        function showHide(){
+
+                show.classList.toggle('active');
+
+            if(pass.type == 'password'){
+                pass.type = 'text';
+            }else{
+                pass.type = 'password';
+            }
+        }
+    </script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
